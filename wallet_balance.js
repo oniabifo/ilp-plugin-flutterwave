@@ -14,7 +14,7 @@ var auth_key = {
         'Content-Type': 'application/json'
     },
     body: {
-        "apiKey": "ts_GCEV2HA2VIAM0V0GN4AZ", "secret": "ts_JDTO74ATU0M5WXU79NBFWFZJOP6EJ9"
+        "apiKey": "apikey", "secret": "secret"
     },
     json: true // Automatically stringifies the body to JSON
 };
