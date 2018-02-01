@@ -3,8 +3,6 @@
 //Moneywave NGN wallet will contain total money.
 'use strict';
 var rp = require('request-promise');
-var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-var xhr = new XMLHttpRequest();
 
 var amount_kobo = process.argv[2];
 
@@ -110,7 +108,13 @@ rp(auth_key)
                                 };
                                 rp(wallet_balance)
                                     .then(function (parsedBody5) {
-                                       var balance = (parsedBody5['data']['balance']);
+                                        console.log(parsedBody5);
+                                       var myData = (parsedBody5['data']);
+                                      console.log(myData);
+                                      for (var i in myData){
+                                          console.log(myData[i])
+                                      }
+                                      var balance = (myData[i]['balance']);
                                         console.log(balance)
                                     })
                                     .catch(function (err) {
