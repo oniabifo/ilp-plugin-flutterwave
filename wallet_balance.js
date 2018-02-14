@@ -38,7 +38,7 @@ rp(auth_key)
                 for (var i in myData) {
                     var balance = (myData[i]['balance']);
                 }
-                console.log("Your wallat contains ₦" +balance)
+                console.log("Your wallet contains ₦" +balance)
             })
     .catch(function (err) {
         console.log(err);
